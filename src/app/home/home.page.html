@@ -1,20 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-router-outlet>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+    <ion-card>
+      <ion-img
+        src="https://media.istockphoto.com/id/1442417585/es/foto/persona-recibiendo-un-pedazo-de-pizza-de-pepperoni-con-queso.jpg?s=612x612&w=0&k=20&c=Uk4fj96OIDxE4v2S5sRRXRY_gZ899_TE6jGD-T-TysI="
+      ></ion-img>
+      <ion-card-header>
+        <ion-card-title id="title">BIG NEW YORKER BACON & BANANA PEPPERS</ion-card-title>
+      </ion-card-header>
+      <ion-card-content> Es una pizza de gran tamaño, inspirada al estilo New York
+        con rebanadas grandes, de pepperoni y trocitos de bacon, con abundante rebanadas de chile
+        banana peppers de sabor suave con toque ácido, con una mezcla de orégano y queso
+        parmesano sobre los ingredientes y mantequilla de ajo a la orilla. </ion-card-content>
+    </ion-card>
+  </ion-router-outlet>
+</ion-app>

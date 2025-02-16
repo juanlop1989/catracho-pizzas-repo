@@ -1,11 +1,17 @@
 #container {
   text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
+  margin-top: 3;  
   transform: translateY(-50%);
+}
+
+#title {
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #e40e0e;
+  text-align: center;
+  margin: 0;
 }
 
 #container strong {
