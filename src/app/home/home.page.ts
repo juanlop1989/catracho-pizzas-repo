@@ -35,7 +35,7 @@ import {
 export class HomePage {
   num:number = 1;
 
-  constructor() {}
+  constructor(private alertController: AlertController) {}
 
   sumarCantidad() {
     this.num += 1;
@@ -46,7 +46,13 @@ export class HomePage {
     if (this.num < 1) this.num = 1;
   }
 
-  alerta(){
-    alert('Producto agregado al carrito');
+  async ordenar() {
+    const alert = await this.alertController.create({
+      header: 'Felicidades',
+      message: 'Ha agregado correctamente el producto a su carrito',
+      buttons: ['Aceptar']
+    });
+
+    await alert.present();
   }
 }

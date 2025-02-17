@@ -3,6 +3,7 @@
 import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
+import { AlertController } from '@ionic/angular';
 import {
 
   IonAlert,
@@ -30,7 +31,7 @@ import {
 export class ProductCardComponent  {
   num:number = 1;
 
-  constructor() {}
+  constructor(private alertController: AlertController) {}
 
   sumarCantidad() {
     this.num += 1;
@@ -41,8 +42,19 @@ export class ProductCardComponent  {
     if (this.num < 1) this.num = 1;
   }
 
-  alerta(){
-    alert('Producto agregado al carrito');
+  /*alerta(){
+    alert('Ha agregado correctamente el producto a su carrito');
+  }*/
+
+
+  async ordenar() {
+    const alert = await this.alertController.create({
+      header: 'Felicidades',
+      message: 'Ha agregado correctamente el producto a su carrito',
+      buttons: ['Aceptar']
+    });
+
+    await alert.present();
   }
 }
 
