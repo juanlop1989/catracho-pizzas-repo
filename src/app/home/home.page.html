@@ -12,6 +12,27 @@
         con rebanadas grandes, de pepperoni y trocitos de bacon, con abundante rebanadas de chile
         banana peppers de sabor suave con toque ácido, con una mezcla de orégano y queso
         parmesano sobre los ingredientes y mantequilla de ajo a la orilla. </ion-card-content>
+    </ion-card>    
+
+    <ion-card id="card">
+    <div>
+      <ion-label id="label">DESDE</ion-label>
+      <ion-label id="precio">LPS. 329.00</ion-label>
+    </div>
+
+    <div>
+      <ion-label  id="label">CANTIDAD: </ion-label>
+      <ion-button id="botones" (click)="restarCantidad()">-</ion-button>
+      <ion-label id="label">
+        {{ num }}
+      </ion-label>
+      <ion-button id="botones" (click)="sumarCantidad()">+</ion-button>
+      <ion-button id="boton" (click)="alerta()">ordenar</ion-button>
+    </div>
     </ion-card>
   </ion-router-outlet>
-</ion-app>
+
+  </ion-app>
+
+
+

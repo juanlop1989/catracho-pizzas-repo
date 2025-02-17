@@ -10,8 +10,44 @@
   line-height: 30px;
 
   color: #e40e0e;
-  text-align: center;
+  text-align: center;;
   margin: 0;
+}
+
+#precio {
+  font-size: 14px;
+  line-height: 50px;
+  margin-left: 40px;
+  color: #e40e0e;
+  font-weight: bold;  
+}
+
+#label {
+  font-size: 14px;
+  line-height: 50px;
+  text-decoration: bold;
+  margin-left: 4px;
+  color: black;
+  font-weight: bold;  
+}
+#botones {
+  --border-radius: 50%;
+  --background: #6a6362;
+  font-weight: bold;  
+  font-size: 14px;
+
+}
+
+#boton {
+  --background: #2be55d;
+  font-weight: bold;  
+  font-size: 14px;
+  color: white;
+  float: right;  
+}
+
+#card {
+  margin-top: -9px;
 }
 
 #container strong {
